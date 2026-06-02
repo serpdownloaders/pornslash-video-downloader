@@ -1,0 +1,212 @@
+{
+  "github_source_repo": "https://github.com/serpcompany/pornslash-downloader",
+  "serply_link": "https://serp.ly/pornslash-downloader",
+  "app_name": "Pornslash Video Downloader",
+  "short_description": "Download & Save Pornslash Videos Easily for Offline Viewing (Browser Extension)",
+  "long_description": "Pornslash Downloader gives viewers a browser-native way to detect and save media from supported PornSlash watch pages without switching to a separate downloader site. Open a PornSlash video page, start playback if the stream needs to load, then use the download button near the player, the extension popup, or the right-click menu. The extension checks the active page for playable media signals such as video/source tags, Open Graph video metadata, observed media resources, and static media URLs found in page scripts.",
+  "main_video": "",
+  "featured_image": "",
+  "screenshots": [
+    "https://apps.serp.co/media/optimized-products/pornslash-downloader-fullscreen-01-37ca897b87.webp",
+    "https://apps.serp.co/media/optimized-products/pornslash-downloader-fullscreen-02-a042c5e596.webp",
+    "https://apps.serp.co/media/optimized-products/pornslash-downloader-fullscreen-03-6beee3c46f.webp",
+    "https://apps.serp.co/media/optimized-products/pornslash-downloader-fullscreen-04-f368affe7e.webp"
+  ],
+  "chromestore_link": "",
+  "firefoxstore_link": "",
+  "other_links": [],
+  "faqs": [
+    {
+      "question": "How do I download a PornSlash video?",
+      "answer": "Open a PornSlash watch page, press play if needed, then use the player download button, extension popup, or right-click menu to scan for available media options."
+    },
+    {
+      "question": "Does this work on every PornSlash page?",
+      "answer": "Not guaranteed. The current build uses a generic static-media extraction approach, so each important PornSlash page type should be tested before relying on it."
+    },
+    {
+      "question": "What file types can it detect?",
+      "answer": "The extension is designed to normalize direct MP4 URLs and HLS/M3U8-style media candidates when the page exposes them."
+    },
+    {
+      "question": "Why might no video appear?",
+      "answer": "The player may not have loaded the stream yet, the page may use a pattern outside the generic adapter, or the detected URL may be filtered as non-content media."
+    },
+    {
+      "question": "Where do downloads go?",
+      "answer": "The offscreen configuration organizes saved files under a PornSlash download folder in your browser."
+    },
+    {
+      "question": "Does it send videos to a remote server?",
+      "answer": "No remote media downloader is involved. Auth and update checks call SERP and GitHub services, while media handling happens through browser and offscreen processing."
+    }
+  ],
+  "permissions": [
+    {
+      "name": "",
+      "description": "Only download content you own or have explicit permission to save"
+    }
+  ],
+  "features": [
+    "Purpose-built URL matching for pornslash.com and www.pornslash.com",
+    "In-player download button configured for the shared player wrapper",
+    "Detects video/source tags, metadata streams, performance resources, and static media URLs",
+    "Handles direct MP4 and HLS candidates through the shared offscreen pipeline",
+    "Right-click menu labeled \"Download PornSlash Video\"",
+    "Download manager with visible in-page progress",
+    "Saves to a PornSlash download folder",
+    "GitHub release update checks for the extension repository",
+    "OTP activation through the SERP auth service",
+    "3 free trial downloads before the licensing flow",
+    "Quality labels from detected media metadata or URL hints where available",
+    "Popup controls for scanning and downloading detected media"
+  ],
+  "content": {
+    "why": [
+      "PornSlash watch pages are built around an embedded player experience where the final video URL is not always visible through normal browser save controls. Generic web downloaders can misread page assets, previews, or ad media as the actual video, leaving you with unusable files or extra steps.",
+      "Pornslash Downloader adds PornSlash-specific page matching, an in-player download control, direct media and HLS candidate detection, an organized download folder, and the shared SERP offscreen download pipeline. Instead of copying URLs to external downloader sites, you stay on the page you are already viewing and use extension controls that understand the PornSlash context."
+    ],
+    "how_it_works": [
+      "Install the extension from the latest release.",
+      "Open Pornslash and go to a supported video page.",
+      "Start playback so the extension can detect the media.",
+      "Open the popup or use the on-page controls.",
+      "Choose the quality option you want.",
+      "Start the download and wait for the MP4 export to finish.",
+      "Save the final file locally."
+    ],
+    "tutorial": [
+      "Install the Pornslash Downloader extension from the latest GitHub release.",
+      "Activate the extension using your email and the one-time password sent to your inbox.",
+      "Navigate to any supported PornSlash watch page in your browser.",
+      "Press the play button on the video player so the page exposes the stream URLs.",
+      "Look for the download button that appears near the player, or open the extension popup.",
+      "Click the download button or popup icon to scan the page for available media candidates.",
+      "Choose the MP4 or HLS option you want from the list of detected formats.",
+      "Wait for the download to complete and save the file from your browser."
+    ],
+    "supported_formats": [
+      "Input: Direct MP4 URLs and HLS/M3U8-style media candidates when the page exposes them",
+      "Output: MP4",
+      "Saved files use MP4 so they are easier to replay on standard media players, move between devices, or archive locally."
+    ],
+    "target_users": [
+      "PornSlash viewers who want a straightforward browser workflow for offline personal viewing",
+      "Users who prefer browser extensions over copy-paste downloader sites",
+      "People who need a player-level download button instead of searching network logs",
+      "Anyone testing or evaluating generated extension candidates before public release"
+    ],
+    "use_cases": [
+      "Save a PornSlash watch-page video for offline viewing",
+      "Check whether the active page exposes direct MP4 or HLS media candidates",
+      "Use a player-level download button instead of searching network logs",
+      "Trigger detection from the extension popup or right-click menu",
+      "Document release-readiness gaps for a generated PornSlash candidate"
+    ],
+    "troubleshooting": [
+      "No video candidates appear after clicking the button Press play on the video player first, as some pages only reveal stream URLs during playback. Refresh the page and try again.",
+      "The extension says no media detected The page may use a video delivery pattern outside the generic adapter. Try a different PornSlash watch page to confirm the issue.",
+      "Downloads fail or produce broken files Make sure you have a stable internet connection. The offscreen pipeline needs continuous access to stream segments during processing.",
+      "The player download button does not appear The page may not have loaded the player wrapper yet. Wait for the full page to render and try refreshing if the button stays hidden.",
+      "The extension asks for activation every time Your OTP session may have expired. Sign in again using your email to receive a new one-time password."
+    ],
+    "trial_access": [
+      "Includes 3 free downloads so you can test the workflow first",
+      "Email sign-in uses secure one-time password verification",
+      "No credit card required for the trial",
+      "Unlimited downloads are available with a paid license"
+    ],
+    "installation_instructions": [
+      "Open the latest release page.",
+      "Download the correct build for your browser.",
+      "Install the extension.",
+      "Open a supported Pornslash page.",
+      "Use the popup to detect and download the media."
+    ],
+    "notes": [
+      "Only download content you own or have explicit permission to save",
+      "An internet connection is required for downloads",
+      "Press play first if detection is empty on a PornSlash watch page",
+      "The current PornSlash adapter is generated and should be tested against real playback before store submission"
+    ],
+    "about": [
+      "PornSlash is a video platform that hosts adult content organized by categories and tags. Pornslash Downloader helps viewers save videos from watch pages without leaving the browser or relying on external downloader sites."
+    ]
+  },
+  "serpx_link": "https://serpx.link/pornslash-downloader",
+  "github_topics": [
+    "pornslash-download",
+    "pornslash-downloader",
+    "pornslash-video-downloader",
+    "pornslash-video-downloader-online",
+    "pornslash-video-downloader-mac",
+    "pornslash-video-downloader-window",
+    "pornslash-video-downloader-free",
+    "pornslash-video-downloader-extension",
+    "pornslash-video-downloader-app",
+    "pornslash-video-downloader-chrome",
+    "pornslash-video-downloader-from-url",
+    "how-to-download-pornslash-videos",
+    "how-to-download-pornslash-videos-mac",
+    "how-to-download-pornslash-videos-windows",
+    "how-to-download-pornslash-videos-online",
+    "how-to-download-pornslash-videos-free",
+    "how-to-download-from-pornslash",
+    "how-to-download-videos-from-pornslash",
+    "download-pornslash-videos",
+    "pornslash-video-tutorial",
+    "save-pornslash-videos",
+    "pornslash-video-content-saver",
+    "how-to-download-pornslash-videos-for-free"
+  ],
+  "hashtags": [
+    "#PornslashDownload",
+    "#PornslashDownloader",
+    "#PornslashVideoDownloader",
+    "#PornslashVideoDownloaderOnline",
+    "#PornslashVideoDownloaderMac",
+    "#PornslashVideoDownloaderWindow",
+    "#PornslashVideoDownloaderFree",
+    "#PornslashVideoDownloaderExtension",
+    "#PornslashVideoDownloaderApp",
+    "#PornslashVideoDownloaderChrome",
+    "#PornslashVideoDownloaderFromURL",
+    "#HowToDownloadPornslashVideos",
+    "#HowToDownloadPornslashVideosMac",
+    "#HowToDownloadPornslashVideosWindows",
+    "#HowToDownloadPornslashVideosOnline",
+    "#HowToDownloadPornslashVideosFree",
+    "#HowToDownloadFromPornslash",
+    "#HowToDownloadVideosFromPornslash",
+    "#DownloadPornslashVideos",
+    "#PornslashVideoTutorial",
+    "#SavePornslashVideos",
+    "#PornslashVideoContentSaver",
+    "#HowToDownloadPornslashVideosForFree"
+  ],
+  "youtube_tags": [
+    "Pornslash Download",
+    "Pornslash Downloader",
+    "Pornslash Video Downloader",
+    "Pornslash Video Downloader Online",
+    "Pornslash Video Downloader Mac",
+    "Pornslash Video Downloader Window",
+    "Pornslash Video Downloader Free",
+    "Pornslash Video Downloader Extension",
+    "Pornslash Video Downloader App",
+    "Pornslash Video Downloader Chrome",
+    "Pornslash Video Downloader From URL",
+    "How To Download Pornslash Videos",
+    "How To Download Pornslash Videos Mac",
+    "How To Download Pornslash Videos Windows",
+    "How To Download Pornslash Videos Online",
+    "How To Download Pornslash Videos Free",
+    "How To Download From Pornslash",
+    "How To Download Videos From Pornslash",
+    "Download Pornslash Videos",
+    "Pornslash Video Tutorial",
+    "Save Pornslash Videos",
+    "Pornslash Video Content Saver",
+    "How To Download Pornslash Videos For Free"
+  ]
+}
